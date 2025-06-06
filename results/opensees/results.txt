@@ -1,0 +1,44 @@
+Element stiffness matrix: []
+Disp -1.8434368650217707e-06
+RotX 5.486211901306236e-07
+RotY 2.9999999999999997e-06
+RotZ 9.719329507523282e-18
+
+Process 0 Terminating
+(base) weldform-pc@weldform:~/Nume
+
+
+
+
+L2: Nodes (0,0),(2,0),(0,1)
+Using ASDShellT3 - Developed by: Massimo Petracca, Guido Camata, ASDEA Software Technology
+Available responses: []
+Ke []
+Available responses: []
+Element stiffness matrix: []
+Disp -3.25095781637717e-06
+RotX -2.999999999999998e-06
+RotY 2.277915632754342e-06
+RotZ 0.0
+Stress result: []
+Available responses: []
+Process 0 Terminating
+
+
+COMBINED LOAD (Comp 20000). XY PLANE
+Element stiffness matrix: []
+DispX 2.1076923076923078e-05
+DispX 4.246153846153846e-05
+DispX 0.0007373747460087081
+RotX -0.0002194484760522496
+RotY -0.0011999999999999997
+RotZ 7.630769230769231e-05
+
+
+COMBINED LOAD (Comp 20000). 10deg
+DispX -8.183482386830239e-05
+DispX 4.450927661141358e-05
+DispX 0.0005929259984996041
+RotX -0.00018923139418104717
+RotY -0.0009733914945530938
+RotZ 4.807888601073009e-05

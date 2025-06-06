@@ -1,0 +1,10 @@
+  THE FOLLOWING DEGREE OF FREEDOM RESULTS ARE IN THE GLOBAL COORDINATE SYSTEM  
+ 
+    NODE       UX           UY           UZ           USUM  
+       1   0.0000       0.0000       0.0000       0.0000     
+       2   0.0000       0.0000     -0.13806E-005 0.13806E-005
+       3   0.0000       0.0000       0.0000       0.0000     
+
+ MAXIMUM ABSOLUTE VALUES
+ NODE          0            0            2            2
+ VALUE    0.0000       0.0000     -0.13806E-005 0.13806E-005

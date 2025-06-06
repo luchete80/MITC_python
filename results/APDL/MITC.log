@@ -1,0 +1,28 @@
+/BATCH  
+/COM,ANSYS RELEASE Release 19.2      BUILD 19.2      UP20180808       16:25:53
+/input,menust,tmp,''
+/GRA,POWER
+/GST,ON
+/PLO,INFO,3
+/GRO,CURL,ON
+/CPLANE,1   
+/REPLOT,RESIZE  
+WPSTYLE,,,,,,,,0
+/CWD,'D:\Luciano\Numerico\MITC_Shells\APDL\bend_F_1elem_t0.1'   
+/FILNAME,MITC,0 
+/SOLU   
+RESUME,'MITC','db','.'  
+/COM,ANSYS RELEASE Release 19.2      BUILD 19.2      UP20180808       16:26:30
+/REPLOT,RESIZE  
+FINISH  
+/POST1  
+SET,LAST
+SET,LAST
+EPLOT   
+!*  
+PRESOL,EPEL,COMP
+PRESOL,EPEL,COMP
+!*  
+PLESOL, EPEL,X, 0,1.0   
+FINISH  
+! /EXIT,NOSAV   

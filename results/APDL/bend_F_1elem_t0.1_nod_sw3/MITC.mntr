@@ -1,0 +1,11 @@
+
+
+
+ SOLUTION HISTORY INFORMATION FOR JOB: MITC.mntr                                                                                                                                                                                                                                                           
+ ANSYS RELEASE 19.2                     18:11:06    05/17/2025
+
+  LOAD   SUB-  NO.  NO.    TOTL  INCREMENT    TOTAL         VARIAB 1     VARIAB 2     VARIAB 3
+  STEP   STEP ATTMP ITER   ITER  TIME/LFACT   TIME/LFACT    MONITOR      MONITOR      MONITOR
+                                                             Wall         MxDs         MxPl
+
+     1      1    1     1      1     1.0000       1.0000      0.36680E-01 -0.27300E-05  0.78886E-30

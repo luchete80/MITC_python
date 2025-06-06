@@ -1,0 +1,75 @@
+
+!-------------------------------------------------------
+! APDL script for single MITC3 shell element (SHELL181)
+!-------------------------------------------------------
+
+! Clear existing database
+/CLEAR,NOSTART
+
+! Set title
+/TITLE, Single MITC3 Shell Element Demonstration
+
+/PREP7  
+! For Thin Shells (Most Cases) → Use full MITC3:
+! For Thick Shells or Explicit Dynamics → MITC for shear only:
+
+! Define element type (SHELL181 - MITC3 formulation)
+ET,1,SHELL181   ! 3-node shell element with MITC formulation
+KEYOPT,1,8,2    ! MITC3 membrane-bending formulation
+KEYOPT,1,3,2    ! Pure displacement-based triangular, no incomp modes(displacement-based, no enhanced strains)
+
+! Material properties (Aluminum example)
+MP,EX,1,200E9    ! Elastic modulus (MPa)
+MP,NUXY,1,0.3   ! Poisson's ratio
+MP,DENS,1,7850 ! Density (tonne/mm³)
+
+! Section properties (1mm thick shell)
+SECTYPE,1,SHELL
+SECDATA,0.1       ! Thickness = 1mm
+
+! Create nodes (equilateral triangle in XY plane)
+N,1,0,0,0       ! Node 1 at origin
+N,2,0.7071,0,0.7071     ! Node 2 at (1,0,0)
+N,3,0,1,0 ! Node 3
+
+! Create element
+E,1,2,3         ! Connect nodes 1-2-3
+
+! Apply boundary conditions
+! Fix all DOFs at node 1
+D,1,ALL,0        ! UX,UY,UZ,ROTX,ROTY,ROTZ = 0
+D,3,ALL,0        ! UX,UY,UZ,ROTX,ROTY,ROTZ = 0
+
+! Apply pressure load
+!SFE,ALL,2,PRES,,1  ! 1 MPa pressure on element
+
+! Apply force at node 2
+F,2,FX, 35.35       ! -50N force in Y-direction
+F,2,FZ,-35.35       ! -50N force in Y-direction
+
+
+! Finish preprocessing
+FINISH
+
+!-------------------------------------------------------
+! Solution phase
+!-------------------------------------------------------
+/SOLU
+ANTYPE,0         ! Static analysis
+SOLVE            ! Solve the model
+FINISH
+
+!-------------------------------------------------------
+! Postprocessing
+!-------------------------------------------------------
+/POST1
+
+ERESX,NO          ! Disable extrapolation (show Gauss-point values)
+PRESOL,EPEL,COMP  ! Print elastic strains at integration points
+
+!PLDISP,1         ! Plot deformed shape
+PRNSOL,U,COMP    ! Print nodal displacements
+PRNSOL,ROT,COMP
+PRESOL,S,COMP    ! Print element stresses
+PRESOL,EPEL,COMP    ! Print element stresses
+FINISH

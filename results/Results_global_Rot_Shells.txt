@@ -1,0 +1,47 @@
+45 dregree shell
+
+
+e1,e2,e3 [0.70710678 0.         0.70710678] [0. 1. 0.] [-0.70710678  0.          0.70710678]
+stress membrane:  [array([0., 0., 0.]), array([0., 0., 0.]), array([0., 0., 0.])]
+stress bending:  [array([49.99994476, 14.99998343,  0.        ]), array([49.99994476, 14.99998343,  0.        ]), array([49.99994476, 14.99998343,  0.        ])]
+Transversal Displacements
+Displacements: [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00
+  0.00000000e+00  0.00000000e+00  9.76079791e-07  0.00000000e+00
+ -9.76079791e-07  0.00000000e+00 -2.72958472e-06  0.00000000e+00
+  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00
+  0.00000000e+00  0.00000000e+00]
+
+MEMBRANE
+
+0000e+00]), array([1.77635684e-15, 5.32907052e-16, 0.00000000e+00])]
+Membrane Case Displacements: [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00
+  0.00000000e+00  0.00000000e+00  6.43369289e-09  0.00000000e+00
+  6.43369289e-09  0.00000000e+00 -9.69744370e-23  0.00000000e+00
+  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00
+  0.00000000e+00  0.00000000e+00]
+  
+  
+  
+    ***** POST1 NODAL DEGREE OF FREEDOM LISTING *****                            
+ 
+  LOAD STEP=     1  SUBSTEP=     1                                             
+   TIME=    1.0000      LOAD CASE=   0                                         
+ 
+  THE FOLLOWING DEGREE OF FREEDOM RESULTS ARE IN THE GLOBAL COORDINATE SYSTEM  
+ 
+    NODE       UX           UY           UZ           USUM  
+       1   0.0000       0.0000       0.0000       0.0000     
+       2  0.97606E-006 0.56508E-023-0.97606E-006 0.13804E-005
+       3   0.0000       0.0000       0.0000       0.0000     
+       
+       
+  LOAD STEP=     1  SUBSTEP=     1                                             
+   TIME=    1.0000      LOAD CASE=   0                                         
+ 
+  THE FOLLOWING DEGREE OF FREEDOM RESULTS ARE IN THE GLOBAL COORDINATE SYSTEM  
+ 
+    NODE       ROTX         ROTY         ROTZ         RSUM  
+       1   0.0000       0.0000       0.0000       0.0000     
+       2 -0.33617E-018 0.27295E-005-0.32470E-018 0.27295E-005
+       3   0.0000       0.0000       0.0000       0.0000     
+       
